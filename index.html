@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Registro de empleados</title>
-    <link rel="stylesheet" href="assets/css/chota.min.css">
-    <link rel="icon" href="assets/images/favicon.png">
-</head>
-<body class="bg-dark">
+    <link rel="stylesheet" href="assets/css/chota.min.css" />
+    <link rel="icon" href="assets/images/favicon.png" />
+  </head>
+  <body class="bg-dark">
     <header class="bg-grey">
-        <h1 class="text-center text-light">Registro de empleados</h1>
+      <hr />
+      <h1 class="text-center text-light">Registro de empleados</h1>
+      <hr />
     </header>
     <main class="bg-grey container p-3">
-        <form id="form" style="padding-bottom: 0.6rem;" class="text-light">
-            <fieldset>
-                <legend class="text-light">Nuevo empleado</legend>
-                <p class="form-group">
-                    <label for="first-name">Nombre</label>
-                    <input type="text" id="first-name" class="form-control" required>
-                </p>
-                <p class="form-group">
-                    <label for="last-name">Apellido</label>
-                    <input type="text" id="last-name" class="form-control" required>
-                </p>
-                <p class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" class="form-control" required>
-                </p>
-                <p class="form-group">
-                    <label for="birth-date">Fecha de nacimiento</label>
-                    <input type="date" id="birth-date" class="form-control" required>
-                </p>
-                <p class="form-group">
-                    <label for="job-title">Cargo</label>
-                    <input type="text" id="job-title" class="form-control" required>
-                </p>
-                <p class="form-group">
-                    <button type="submit" class="button success">Registrar empleado</button>
-                    <button type="reset" class="button error">Limpiar</button>
-                </p>
-            </fieldset>
-        </form>
+      <form id="form" style="padding-bottom: 0.6rem" class="text-light">
+        <fieldset>
+          <legend class="text-light">Nuevo empleado</legend>
+          <p class="form-group">
+            <label for="first-name">Nombre</label>
+            <input type="text" id="first-name" class="form-control" required />
+          </p>
+          <p class="form-group">
+            <label for="last-name">Apellido</label>
+            <input type="text" id="last-name" class="form-control" required />
+          </p>
+          <p class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" class="form-control" required />
+          </p>
+          <p class="form-group">
+            <label for="birth-date">Fecha de nacimiento</label>
+            <input type="date" id="birth-date" class="form-control" required />
+          </p>
+          <p class="form-group">
+            <label for="job-title">Cargo</label>
+            <input type="text" id="job-title" class="form-control" required />
+          </p>
+          <p class="form-group">
+            <button type="submit" class="button success">
+              Registrar empleado
+            </button>
+            <button type="reset" class="button error">Limpiar</button>
+          </p>
+        </fieldset>
+      </form>
     </main>
+    <aside
+      id="list"
+      class="card text-light bg-grey"
+      style="width: 90%; margin: 1rem auto"
+    >
+      <header>
+        <h2 class="text-center">Lista de empleados registrados</h2>
+        <hr />
+      </header>
+      <div id="employees">
+        <p>Aún no ha registrado empleados.</p>
+      </div>
+    </aside>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
